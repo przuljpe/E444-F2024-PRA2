@@ -33,4 +33,4 @@ def index():
     return render_template("index.html", form=form, name=session.get('name'), email=session.get('email'), uoft=session.get('uoft'))
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True, host='0.0.0.0')
